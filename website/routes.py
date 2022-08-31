@@ -25,11 +25,12 @@ def login():
         email = form.email.data
         password = request.form.get('password')
         user = User.query.filter_by(email = email).first()
+        all_post = BlogPost.query.limit(3).all()
         if user:
             if check_password_hash(user.password, password):
                 login_user(user, remember=True)
                 flash("Login Successfully", category='success')
-                return render_template('home.html', user = current_user)
+                return render_template('home.html', user = current_user, posts = all_post)
             else:
                 flash("Incorrect password", category='error')
         else:
@@ -44,6 +45,7 @@ def register():
         email = form.email.data
         password = generate_password_hash(form.password.data,method='pbkdf2:sha256', salt_length=8)
         user = User.query.filter_by(email = email).first()
+        all_post = BlogPost.query.limit(3).all()
         if user:
             flash("Email ID already exists, please login.", category='error')
         else:
@@ -52,7 +54,7 @@ def register():
             db.session.commit()
             flash("Registered successfully", category='success')
             login_user(new_user, remember=True)
-            return render_template('home.html', user = current_user)
+            return render_template('home.html', user = current_user, posts = all_post)
     return render_template('register.html', form = form, user = current_user)
 
 @app. route('/contact', methods = ['GET', 'POST'])
@@ -115,6 +117,8 @@ def show_post(post_id):
 def logout():
     logout_user()
     return redirect('/login')
+
+
 
 
 

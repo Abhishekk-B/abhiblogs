@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar{
+    margin: 0;
+    padding: 10px 40px;
+    background-color: #000;
+    height: 70px;
+    z-index: 2;
+}
+
+.navbar .navbar-nav .nav-link{
+    padding: 5px 20px;
+    font-size: 25px;
+    z-index: 2;
+}
+
+
+.flash-msg{
+    position: absolute;
+    top: 10%;
+    z-index: 0;
+}
+
+.flash-msg1{
+    text-align: left;
+    padding: 0;
+    font-size: 20px;
+}
+
+.main-row{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/login.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+}
+.main-row h1{
+    font-size: 130px;
+}
+
+.main-home-second{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+}
+
+.main-home-third{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    background-color: #000;
+    padding: 0 350px;
+}
+
+.main-home-third .card{
+    background-color: #EB1D36;
+    height: 400px;
+    padding: 20px 10px;
+}
+
+.main-home-third img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #fff;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.second-text a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Login Page */
+
+.main-login{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/login.jpg);
+    background-size: 100vw 700px;
+    height: 70vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    color: white;
+}
+
+.login-form{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-form form{
+    text-align: left;
+    font-size: 25px;
+    /* border: 2px solid #000; */
+    padding: 30px 20px;
+    background-color: #000;    color: white;
+}
+
+form .form-group-btn{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+
+form .form-group{
+    padding: 2px;
+    width: 100%;
+}
+
+/* Register Page */
+
+.main-register{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/signup.jpg);
+    background-size: 100vw 700px;
+    height: 70vh;
+    color: white;
+}
+
+.register-form{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register-form form{
+    text-align: left;
+    font-size: 25px;
+    padding: 30px 20px;
+    background-color: #000;
+    color: white;
+    width: 400px;
+}
+.register-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.register-text h1{
+    font-size: 70px;
+}
+
+.login-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.login-text h1{
+    font-size: 70px;
+}
+
+.post-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.post-text h1{
+    font-size: 70px;
+}
+
+
+form .input-group{
+    width: 100%;
+}
+
+.main-contact{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/contact.jpg);
+    background-size: 100vw 500px;
+    height: 70vh;
+    color: white;
+}
+
+
+
+.post-main{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/post.jpg);
+    background-size: cover;
+}
+
+.post-main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    padding: 150px;
+}
+
+.flash-msg-post{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+.flash-msg-post1{
+    text-align: left;
+    padding: 0;
+    font-size: 20px;
+}
+
+.flash-msg-post .alert{
+    height: 40px;
+}
+
+
+.post-main a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.post-main a h5{
+    margin-bottom: 50px;
+}
+
+.post-read-main{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/post.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    padding: 150px;
+}
+
+.post-read-main h5{
+    margin-bottom: 50px;
+}
+
+.post-read-main h1{
+    margin-bottom: 20px;
+}
+
+.post-read-cmt{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    color: #000;
+    padding: 40px 150px;
+}
+
+.commentList{
+    list-style: none;
+    padding: 5px 30px;
+}
+
+.commentList li{
+    display: flex;
+
+}
+
+.commentList li span{
+    font-size: 15px;
+    display: block;
+
+}
+.commenterImage{
+    text-align: center;
+
+
+}
+
+.commenterImage img{
+    width: 70px;
+    padding: 0 10px;
+
+}
+.commentText{
+    font-size: 20px;
+    padding: 0 0 0 10px;
+}
+
+
+.second{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/blog.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    margin: 0;
+}
+
+
+.new-post-main{
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../images/blog.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    margin: 0;
+    padding: 100px;
+    font-size: 20px;
+}
+
+.new-post-main .container{
+    width: 60vw;
+}
+
+.input-group-new{
+    height: 40px;
+    width: 100%;
+}
+
+.btn-form-new{
+    padding: 10px 0;
+}
+
+/* small device */
+
+@media only screen and (max-width: 600px) {
+ 
+
+    .post-read-main{
+        padding: 50px;
+        height: 140vh;
+    }
+    
+    .post-read-main h5{
+        margin-bottom: 25px;
+    }
+    
+    .post-read-main h1{
+        margin-bottom: 10px;
+    }
+    .post-main2{
+        padding: 100px 40px;
+    }
+    .new-post-main{
+        padding: 100px 25px;
+    }
+    .new-post-main .container{
+        width: 85vw;
+    }
+    .register-text{       
+        margin-top: 165px;
+    }
+    
+    .register-text h1{
+        font-size: 50px;
+    }
+
+    .login-text{       
+        margin-top: 145px;
+    }
+    .login-text h1{
+        font-size: 50px;
+    }
+    .post-text{
+        margin-top: 0px;
+    }
+    
+    .post-text h1{
+        font-size: 50px;
+    }
+    
+    .post-read-cmt{
+        padding: 20px 30px;
+    }
+    .main-row h1{
+        font-size: 70px;
+    }
+    
+.main-home-third{
+    padding: 0 50px;
+}
+
+.main-home-third .card{
+    background-color: #EB1D36;
+    height: 400px;
+    padding: 20px 10px;
+}
+
+.main-home-third img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.flash-msg1{
+    font-size: 18px;
+    height: 10px;
+}
+.flash-msg-post1{
+    font-size: 18px;
+    height: 10px;
+}
+
+.nav-li{
+    background-color: #000;
+    padding: 15px;
+}
+
+  }
